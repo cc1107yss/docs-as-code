@@ -7,14 +7,14 @@
 
 This is a documentation workflow for **individuals and teams**. It works for research, software, product design, study notes, operations manuals, and any knowledge base that must stay current.
 
-## 一句话理解 / The idea in one sentence
+## 说白了 / The idea in one sentence
 
 ```text
 先写下来 → 在分支中修改 → 用 PR 讨论和评审 → 合并为现役版本 → 用 Git 保留历史
 Write first → change on a branch → discuss and review in a PR → merge the current version → keep history in Git
 ```
 
-Docs-as-code 不是“把 Word 换成 Markdown”这么简单。关键是让重要文档和代码共享同一套生命周期：
+Docs-as-code 并非“把 Word 换成 Markdown”这么简单。关键是让重要文档和代码共享同一套生命周期：
 
 1. 文档存放在 Git 仓库中；
 2. 重要修改不直接覆盖现役版本；
@@ -24,7 +24,7 @@ Docs-as-code 不是“把 Word 换成 Markdown”这么简单。关键是让重�
 
 Docs-as-code is more than replacing Word with Markdown. The important part is giving documentation the same lifecycle as code: versioned files, reviewable changes, linked decisions and tasks, and durable history.
 
-## 先判断该用什么 / Choose the right GitHub object
+## 怎么用 / Choose the right GitHub object
 
 | 你现在面对的事情 / Situation | 使用 / Use | 原因 / Why |
 | --- | --- | --- |
