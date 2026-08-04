@@ -71,6 +71,43 @@ For any meaningful document change: create a short-lived branch, edit and commit
 
 Tiny typo and link fixes may go directly to `main`. Changes to meaning, process, interfaces, or conclusions should use a pull request.
 
+### 多人同时编辑与冲突 / Concurrent edits and conflicts
+
+GitHub 不是实时共同编辑器。如果两个人同时修改同一文件的同一段落，合并时可能出现冲突。这不是数据丢失，而是 Git 要求人工确认两边内容应该如何组合。
+
+GitHub is not a real-time collaborative editor. If two people edit the same part of a file at the same time, Git may report a merge conflict. A conflict is a request for a human decision about how to combine both changes.
+
+减少冲突：
+
+- 重要修改先创建 Draft PR，让别人知道文件正在修改；
+- 尽量按文件或目录分工，避免多人同时编辑同一篇长文档；
+- 组会记录按日期拆成独立文件，例如 `meetings/YYYY-MM-DD-topic.md`；
+- 为高频修改的总览文档指定维护者，其他人通过 Issue 或 PR 提议修改；
+- 不要同时在网页和本地修改同一个文件后再互相覆盖。
+
+To reduce conflicts:
+
+- Open a draft PR early so others can see that a file is being edited;
+- Divide work by file or directory where possible;
+- Store meeting notes as separate date-based files;
+- Assign an owner to frequently edited overview documents;
+- Do not edit the same file independently in the web UI and a local clone.
+
+如果 PR 出现冲突：
+
+1. 打开 PR 中的 **Resolve conflicts**；
+2. 阅读两边的修改，不要机械地全部选择 “ours” 或 “theirs”；
+3. 保留双方有价值的内容，删除 `<<<<<<<`、`=======`、`>>>>>>>` 冲突标记；
+4. 点击 **Mark as resolved** 并提交；
+5. 重新检查渲染后的文档，再合并 PR。
+
+If a PR has conflicts, use **Resolve conflicts**, read both versions, preserve the useful parts, remove the conflict markers, mark the files resolved, and review the rendered document before merging.
+
+简单规则 / Simple rule:
+
+> 同一文件同一时间尽量只由一个人负责修改；其他人通过 Issue 或 PR 评论提出意见。
+> Prefer one active editor per file; everyone else contributes through issues or PR comments.
+
 ## 标准路径二：从会议到结果 / From meeting to result
 
 会议记录负责保存“当时讨论了什么”，Issue 负责推动工作，最终文档负责保存可复用结论。
