@@ -223,6 +223,7 @@ If you complete this checklist once, you have already practiced the core docs-as
 
 ## 下一步 / Roadmap
 
+- [Markdown 写作速查表](guides/markdown-cheatsheet.md)
 - Meeting note、Issue、PR 和 RFD 模板
 - `CODEOWNERS` 示例
 - GitHub Projects 示例
