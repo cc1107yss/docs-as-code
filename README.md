@@ -6,7 +6,7 @@
 
 Docs-as-code is a documentation workflow for individuals and teams. It works for research, software, product design, study notes, operations manuals, and any knowledge base that must stay current.
 
-## The idea in one sentence
+## Put simply
 
 ```text
 Write first → change on a branch → discuss and review in a PR → merge the current version → keep history in Git
@@ -20,7 +20,7 @@ Docs-as-code is more than replacing Word with Markdown. The important part is gi
 4. Link decisions, tasks, discussions, and final documents;
 5. Keep old decisions as history instead of deleting them.
 
-## Choose the right GitHub object
+## How
 
 | Situation | Use | Why |
 | --- | --- | --- |
